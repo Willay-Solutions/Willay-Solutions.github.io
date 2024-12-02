@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipo de letra */
+body {
+    font-family: 'Segoe UI Light', Tahoma;
+}
+
+
+/* Sección de Descripción */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Sección de Cofundadores */
+.founders {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.founders h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.founder-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.founder-card {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.founder-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.founder-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.founder-card p {
+    font-size: 0.9rem;
+    color: #555;
+}

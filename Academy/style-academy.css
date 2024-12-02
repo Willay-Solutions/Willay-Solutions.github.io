@@ -1,0 +1,131 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Tipo de letra */
+body {
+    font-family: 'Segoe UI Light', Tahoma;
+}
+
+.title span {
+    display: inline-block;
+    opacity: 0; /* Ocultas inicialmente */
+    transform: translateY(20px); /* Desplazadas hacia abajo */
+}
+
+/* Introducción */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.intro-content {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.intro-content h1 {
+    font-size: 2.5rem;
+    color: #004e43;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-start {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00e6a4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #004e43;
+    font-weight: bold;
+}
+
+.btn-start:hover {
+    background-color: #00b387;
+}
+
+.intro-image img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cursos */
+.courses {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    color: #004e43;
+    margin-bottom: 30px;
+}
+
+.course-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    max-width: 300px;
+    text-align: left;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+}
+
+.course-item img {
+    width: 100%;
+    border-bottom: 3px solid #00e6a4;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-info h3 {
+    font-size: 1.5rem;
+    color: #004e43;
+}
+
+.course-info p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.btn-course {
+    background-color: #00e6a4;
+    color: #004e43;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-course:hover {
+    background-color: #00b387;
+}
