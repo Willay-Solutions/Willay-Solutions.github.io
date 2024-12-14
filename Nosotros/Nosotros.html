@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style-nosotros.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>Willay Solutions</title>
 </head>
 <body>
@@ -23,51 +25,178 @@
                 <li><a href="../Contacto/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        
     </header>
-     <!-- Sección de Descripción de la Empresa -->
-     <section class="about">
+    <!-- Sección de Descripción de la Empresa -->
+    <section class="about">
         <h1>Sobre Nosotros</h1>
         <p>
-            Somos una consultora comprometida con ofrecer soluciones estratégicas e innovadoras para nuestros clientes. 
-            Nuestro equipo se especializa en el diseño y ejecución de estrategias personalizadas que generan resultados sostenibles.
+            En <strong>Willay Solutions</strong>, somos una empresa boliviana especializada en 
+            <strong>inteligencia artificial</strong>, <strong>business intelligence</strong> y 
+            <strong>análisis de datos</strong>. Ofrecemos soluciones tecnológicas avanzadas para transformar 
+            la manera en que las empresas toman decisiones estratégicas y optimizan sus operaciones.
+        </p>
+        <p>
+            Nuestro equipo combina <strong>machine learning</strong>, <strong>análisis predictivo</strong> y 
+            <strong>automatización</strong> para potenciar la eficiencia operativa, mejorar la experiencia del cliente 
+            y maximizar la rentabilidad. Ayudamos a nuestros clientes a anticiparse al cambio y convertir sus datos en 
+            estrategias efectivas que impulsen su crecimiento.
+        </p>
+        <p>
+            Ya sea automatizando procesos, desarrollando modelos predictivos o diseñando estrategias personalizadas, 
+            en <strong>Willay Solutions</strong> trabajamos para garantizar resultados que lideren la 
+            <strong>transformación digital</strong> de las empresas.
         </p>
     </section>
-
-    <!-- Sección de Cofundadores -->
+    
     <section class="founders">
         <h2>Nuestros Cofundadores</h2>
         <div class="founder-gallery">
-            <!-- Pablo Soria -->
-            <div class="founder-card">
-                <img src="Imágenes/Pablo_Soria.jpg" alt="Pablo Soria">
-                <h3>Pablo Soria</h3>
-                <p>Habilidades: Estrategia empresarial, liderazgo organizacional.</p>
-                <p>Formación: MBA, Universidad de Harvard.</p>
+            <div class="carousel">
+                <!-- Pablo Soria -->
+                <div class="founder-card">
+                    <img src="../Imágenes/Cofounders/Pablo.png" alt="Pablo Soria">
+                    <h3>Pablo Soria</h3>
+                    <div class="founder-details">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Especialista en gestión de riesgos financieros con enfoque en innovación y automatización.</li>
+                            <li>Desarrollo de soluciones tecnológicas aplicadas al sector financiero:
+                                <ul>
+                                    <li>Automatización de procesos.</li>
+                                    <li>Desarrollo de aplicaciones personalizadas.</li>
+                                </ul>
+                            </li>
+                            <li>Experiencia en análisis de riesgos, implementación de modelos financieros y optimización de procesos.</li>
+                            <li>Competencias avanzadas en programación y data science:
+                                <ul>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Formación Académica:</h4>
+                        <ul>
+                            <li>Ingeniería Financiera con distinción académica por la Universidad Privada Boliviana (UPB).</li>
+                            <li>Diplomado en Asesoría de Inversiones y Estructuración de Emisiones.</li>
+                            <li>Formación en Data Science.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Nicolás Fernández -->
+                <div class="founder-card">
+                    <img src="../Imágenes/Cofounders/Nico.png" alt="Nicolás Fernández">
+                    <h3>Nicolás Fernández</h3>
+                    <div class="founder-details">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Amplia experiencia en econometría, análisis de datos y machine learning aplicado a problemas económicos y sociales.</li>
+                            <li>Experto en herramientas especializadas:
+                                <ul>
+                                    <li>SQL</li>
+                                    <li>Python</li>
+                                    <li>Stata</li>
+                                    <li>R</li>
+                                </ul>
+                            </li>
+                            <li>Contribución en proyectos de alto impacto en:
+                                <ul>
+                                    <li>Instituto de Estudios Avanzados en Desarrollo (INESAD).</li>
+                                    <li>Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO).</li>
+                                    <li>Instituto Nacional de Estadística (INE).</li>
+                                </ul>
+                            </li>
+                            <li>Apasionado por la política económica, la econometría y la creación de soluciones innovadoras basadas en datos.</li>
+                        </ul>
+                        <h4>Formación Académica:</h4>
+                        <ul>
+                            <li>Licenciatura en Economía con excelencia académica por la Universidad Privada Boliviana (UPB), con mención en Economía de Empresas.</li>
+                            <li>Doble Titulación en Finanzas y Economía Industrial por la London School of Economics and Political Science (LSE).</li>
+                            <li>Diplomado en Econometría y Machine Learning por la Universidad Católica Boliviana (UCB).</li>
+                            <li>Diplomado en Educación Superior.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ricardo Ruiz -->
+                <div class="founder-card">
+                    <img src="../Imágenes/Cofounders/Ricardo.jpeg" alt="Ricardo Ruiz">
+                    <h3>Ricardo Ruiz</h3>
+                    <div class="founder-details">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Especialista en Inteligencia Artificial y Análisis de Datos aplicados al desarrollo de soluciones empresariales.</li>
+                            <li>Experiencia destacada en:
+                                <ul>
+                                    <li>Creación de modelos de machine learning para optimizar procesos empresariales.</li>
+                                    <li>Desarrollo de proyectos multimillonarios y modelos de análisis avanzados en fondos de inversión basados en USA.</li>
+                                </ul>
+                            </li>
+                            <li>Amplio conocimiento del panorama económico, financiero y político, transformando datos en estrategias exitosas.</li>
+                            <li>Liderazgo en proyectos tecnológicos internacionales en:
+                                <ul>
+                                    <li>Brasil</li>
+                                    <li>Colombia</li>
+                                    <li>Bolivia</li>
+                                </ul>
+                            </li>
+                            <li>Fundador y Director de Tecnología de Willay Solutions, dirigiendo iniciativas de innovación tecnológica.</li>
+                        </ul>
+                        <h4>Formación Académica:</h4>
+                        <ul>
+                            <li>Economista titulado por la London School of Economics and Political Science (LSE).</li>
+                            <li>Científico de Datos, certificado por IBM.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Adrián Pardo -->
+                <div class="founder-card">
+                    <img src="../Imágenes/Cofounders/Adrián.jpg" alt="Adrián Pardo">
+                    <h3>Adrián Pardo</h3>
+                    <div class="founder-details">
+                        <h4>Habilidades:</h4>
+                        <ul>
+                            <li>Amplia experiencia en:
+                                <ul>
+                                    <li>Análisis de datos financieros aplicado a instituciones financieras y no financieras.</li>
+                                    <li>Automatización de procesos y gestión de bases de datos.</li>
+                                    <li>Construcción y visualización de datos usando herramientas como:
+                                        <ul>
+                                            <li>Power BI</li>
+                                            <li>SQL</li>
+                                            <li>Python</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Experiencia profesional destacada en instituciones reconocidas:
+                                <ul>
+                                    <li>Bolsa Boliviana de Valores (BBV)</li>
+                                    <li>Mercantil Santa Cruz Agencia de Bolsa (MIBSA)</li>
+                                    <li>Cervecería Boliviana Nacional (CBN)</li>
+                                    <li>Banco PYME Ecofuturo (FEF)</li>
+                                </ul>
+                            </li>
+                            <li>Aplicación exitosa de Machine Learning no supervisado en el análisis de datos del mercado de valores boliviano.</li>
+                        </ul>
+                        <h4>Formación Académica:</h4>
+                        <ul>
+                            <li>Licenciatura en Ingeniería Financiera con distinción académica por la Universidad Privada Boliviana (UPB), con mención en Mercado de Valores.</li>
+                            <li>Estudios de inglés (ESL) en EEUU.</li>
+                            <li>Diplomas en Machine Learning (Udemy).</li>
+                        </ul>
+                    </div>
+                </div>                
             </div>
-            <!-- Nicolás Fernández -->
-            <div class="founder-card">
-                <img src="Imágenes/Cofounders/Nico.png" alt="Nicolás Fernández">
-                <h3>Nicolás Fernández</h3>
-                <p>Habilidades: Innovación, análisis de datos.</p>
-                <p>Formación: MSc en Data Science, MIT.</p>
-            </div>
-            <!-- Ricardo Ruiz -->
-            <div class="founder-card">
-                <img src="Imágenes/Cofounders/Ricardo.jpeg" alt="Ricardo Ruiz">
-                <h3>Ricardo Ruiz</h3>
-                <p>Habilidades: Desarrollo tecnológico, gestión de proyectos.</p>
-                <p>Formación: Ingeniería en Software, Stanford.</p>
-            </div>
-            <!-- Adrián Pardo -->
-            <div class="founder-card">
-                <img src="Imágenes/Cofounders/Adrián.jpg" alt="Adrián Pardo">
-                <h3>Adrián Pardo</h3>
-                <p>Habilidades: Finanzas corporativas, análisis de mercado.</p>
-                <p>Formación: Economía, London School of Economics.</p>
-            </div>
+            <!-- Botones de navegación -->
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+            <!-- Contenedor de los indicadores -->
+            <div class="dots-container"></div>
         </div>
     </section>
-
+    
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -90,14 +219,14 @@
                     </a>
                 </div>
             </div>
-
+            
             <!-- Sección: Academy -->
             <div class="footer-section">
                 <h3>Academy</h3>
                 <p>Explora nuestros cursos y programas de capacitación diseñados para impulsar tu carrera profesional.</p>
                 <a href="academy.html" class="footer-link">Ver cursos</a>
             </div>
-
+            
             <!-- Sección: Desarrollo Profesional -->
             <div class="footer-section">
                 <h3>Desarrollo Profesional</h3>
@@ -105,11 +234,12 @@
                 <a href="desarrollo-profesional.html" class="footer-link">Explorar oportunidades</a>
             </div>
         </div>
-
+        
         <!-- Copyright -->
         <div class="footer-bottom">
             <p>&copy; 2024 Willay Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="script-nosotros.js"></script>
 </body>
 </html>

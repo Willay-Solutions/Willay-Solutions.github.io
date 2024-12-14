@@ -10,15 +10,87 @@ body {
     font-family: 'Segoe UI Light', Tahoma;
 }*
 
+.portfolio-intro {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background: linear-gradient(135deg, #004e43, #00e6a4);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.portfolio-intro::before, .portfolio-intro::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.portfolio-intro::before {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+}
+
+.portfolio-intro::after {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: -100px;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.intro-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Sección de Portafolio */
 .portfolio-section {
     padding: 50px 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #004e43;
 }
@@ -31,52 +103,63 @@ body {
 }
 
 .gallery-item, .paper-item, .dashboard-item {
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
+    width: 300px;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item:hover, .paper-item:hover, .dashboard-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-item img, .dashboard-item img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .btn {
-    background-color: #00e6a4;
-    color: #002b26;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 15px;
     display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00e6a4;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background-color: #00b387;
+    transform: scale(1.1);
 }
 
-/* Estilo único para cada sección */
-.programming {
-    background-color: #f8f8f8;
+/* Modal para notificación */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
 }
 
-.academics {
-    background-color: #ffffff;
+.modal.active {
+    display: block;
 }
 
-.dashboards {
-    background-color: #f8f8f8;
+.modal a {
+    color: #00e6a4;
+    font-weight: bold;
 }

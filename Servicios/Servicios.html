@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style-servicios.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>Servicios Willay</title>
 </head>
 <body>
@@ -25,12 +26,29 @@
             </ul>
         </nav>
     </header>
-    <!-- Última Sección -->
+    <!-- Sección para diagnóstico -->
+    <section class="diagnostic">
+        <div class="diagnostic-content">
+            <h2>Diagnóstico Empresarial Gratuito</h2>
+            <p>
+                En <strong>Willay Solutions</strong>, ofrecemos un diagnóstico inicial gratuito para identificar 
+                problemas y oportunidades en tu empresa. Nuestro equipo de expertos analizará tus procesos y datos 
+                para brindarte soluciones personalizadas que impulsen el éxito de tu negocio.
+            </p>
+            <a href="../Contacto/Contacto.html" class="btn-diagnostic">Solicita tu Diagnóstico</a>
+        </div>
+        <div class="diagnostic-image">
+            <img src="Imágenes/diagnostic.svg" alt="Diagnóstico Gratuito">
+        </div>
+    </section>
+    <!-- Primera sección -->
     <section class="catalog-section">
-        <h2>Más Servicios Disponibles</h2>
-        <p>No son todos nuestros servicios, descarga nuestro catálogo y explora una amplia variedad de servicios ofrecidos.</p>
+        <h2>Catálogo de Servicios</h2>
+        <p>Te invitamos a descargar nuestro catálogo y así explorares nuestra amplia variedad de servicios ofrecidos.
+            De igual manera, te dejamos un adelanto de algunos de nuestros servicios.
+        </p>
         <a href="../Archivos descargables/Catálogo Willay Solutions.pdf" class="btn" download="Catalogo_Servicios">Descargar Catálogo</a>
-        <p class="contact-text">¿No encuentras lo que buscas? Ponte en contacto con nosotros y evaluaremos la solución que necesites y la realizamos a tu medida.</p>
+        <p class="contact-text">¿No encuentras lo que buscas? Ponte en contacto con nosotros para que evaluemos la solución que necesites y será a tu medida!</p>
     </section>
 
     <!-- Sección: Servicio 1 -->
@@ -38,7 +56,16 @@
         <div class="service-content">
             <div class="service-text">
                 <h2>Consultoría Estratégica</h2>
-                <p>Diseñamos soluciones personalizadas para impulsar el crecimiento y la eficiencia de tu negocio.</p>
+                <p>
+                    Sabemos que la estrategía es muy importante para el crecimiento empresarial, es por eso que ponemos a disposición de nuestros clientes
+                    un servicio tan clave como este. Te ayudamos a realizar estratégias que vayan acorde a tus necesidades particulares que puedan impulsar
+                    tu negocio en un mundo que va en constante cambio.
+                    <ul>
+                        <li>Monitoreo de indicadores clave.</li>
+                        <li>Análisis de la competencia e industria.</li>
+                        <li>Análisis financiero y valoraciones.</li>
+                    </ul>
+                </p>
             </div>
             <div class="service-image">
                 <img src="Imágenes/consultoria.jpg" alt="Consultoría Estratégica">
@@ -53,8 +80,12 @@
                 <img src="Imágenes/estrategia.jpg" alt="Estrategia Empresarial">
             </div>
             <div class="service-text">
-                <h2>Estrategia Empresarial</h2>
-                <p>Transformamos tus objetivos en planes accionables para garantizar resultados sostenibles.</p>
+                <h2>Análisis Predictivo y Pronósticos</h2>
+                <p>
+                    Destacar en tu industria implica poder estar preparado ante sucesos futuros! Por ello, a través del uso de modelos de machine learning,
+                    creamos herramientas que ayuden a tu negocio a maximizar las ganancias, minimizar pérdidas tanto en corto como en el largo plazo. <br>
+                    ¡No se puede controlar lo que no se mide! 
+                </p>
             </div>
         </div>
     </section>
@@ -63,8 +94,8 @@
     <section class="service-section">
         <div class="service-content">
             <div class="service-text">
-                <h2>Gestión de Proyectos</h2>
-                <p>Planificación y ejecución eficaz para garantizar el éxito de tus proyectos más desafiantes.</p>
+                <h2>Automatización de Procesos</h2>
+                <p>Existen tareas repetitivas que son muy importantes de realizar.</p>
             </div>
             <div class="service-image">
                 <img src="Imágenes/gestion.jpg" alt="Gestión de Proyectos">
@@ -128,6 +159,6 @@
             <p>&copy; 2024 Willay Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="script-servicios.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

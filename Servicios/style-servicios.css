@@ -10,6 +10,68 @@ body {
     font-family: 'Segoe UI Light', Tahoma;
 }
 
+.diagnostic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(135deg, #00e6a4, #004e43);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.diagnostic-content {
+    max-width: 50%;
+}
+
+.diagnostic-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.diagnostic-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-diagnostic {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #004e43;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-diagnostic:hover {
+    transform: scale(1.1);
+    background-color: #00b387;
+    color: white;
+}
+
+.diagnostic-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animación flotante */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
 /* Servicios */
 .service-section {
     padding: 50px 20px;
@@ -64,7 +126,7 @@ body {
 /* Catálogo */
 .catalog-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 300px;
     background-color: #ffffff;
 }
 
