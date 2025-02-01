@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header class="header" id="main-header">
         <div class="logo">
-            <img src="Imágenes/Logo_name_Transparent.svg" alt="Logo Consultora">
+            <a href="index.html"><img src="Imágenes/Logo_name_Transparent.svg" alt="Logo Consultora"></a>
         </div>
         <button class="menu-toggle" id="menu-toggle">☰</button>
         <nav class="navbar" id="navbar">
@@ -31,10 +30,19 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Bienvenidos a <br> Willay Solutions</h1>
-            <p class="hero-text">Somos líderes en brindar soluciones estratégicas para impulsar el éxito de tu negocio. ¡Conoce más sobre nosotros!</p>
+            <p class="hero-text">
+                El camino al éxito comienza aquí. <br>
+                Somos líderes en brindar soluciones estratégicas para impulsar el éxito de tu negocio. <br> 
+                ¡Conoce más sobre nosotros!
+            </p>
             <a href="Servicios/Servicios.html" class="hero-button">Saber más</a>
         </div>
-        
+            <!-- Formas decorativas -->
+        <div class="hero-shapes">
+            <div class="shape triangle"></div>
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+        </div>
     </section>
 
     <!-- Servicios -->
@@ -43,8 +51,11 @@
         <div class="service-items">
             <div class="service-item">
                 <img src="servicio1.jpg" alt="Consultoría">
-                <h3>Consultoría</h3>
-                <p>Asesoría profesional para optimizar tus procesos empresariales.</p>
+                <h3>Consultoría Estratégica</h3>
+                <p>
+                    Asesoría profesional para optimizar tus procesos empresariales y diseño de estrategiasPersonalizadas
+                    para alcanzar el éxito.
+                </p>
             </div>
             <div class="service-item">
                 <img src="servicio2.jpg" alt="Estrategia">
@@ -57,10 +68,7 @@
                 <p>Gestión eficiente de recursos para resultados sostenibles.</p>
             </div>
         </div>
-        <!-- Botón para ver más servicios -->
-        <div class="services-button">
-            <a href="Servicios/Servicios.html" class="btn">Ver todos los servicios</a>
-        </div>
+        <a href="Servicios/Servicios.html" class="services-button">Ver todos los servicios</a>
     </section>
 
     <!-- Portafolio -->
@@ -84,15 +92,13 @@
             </div>
         </div>
         <!-- Botón para ver el portafolio completo -->
-        <div class="portfolio-button">
-            <a href="Portafolio/Portafolio.html" class="btn">Ver todo el portafolio</a>
-        </div>
+        <a href="Portafolio/Portafolio.html" class="portfolio-button">Ver todo el portafolio</a>
     </section>
     <!-- Call to Action -->
     <section class="cta">
         <h2>¿Listo para trabajar con nosotros?</h2>
         <p>Contáctanos hoy mismo y da el primer paso hacia el éxito.</p>
-        <a href="Contacto/Contacto.html" class="btn">Contáctanos</a>
+        <a href="Contacto/Contacto.html" class="contact-button">Contáctanos</a>
     </section>
     <!-- Footer -->
     <footer class="footer">

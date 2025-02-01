@@ -145,90 +145,100 @@ body {
 
 
 
-/* Hero - Fondo con transparencia */
+/* Sección Hero */
 .hero {
-    background: linear-gradient(to bottom, #002b26, #f8f8f8);
-    height: 100vh; /* Altura completa de la pantalla */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    color: #fff; /* Texto blanco para contraste */
+    padding: 150px 20px;
+    background: linear-gradient(135deg, #004e43, #00e6a4);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
     font-size: 3rem;
-    opacity: 0; /* Oculto inicialmente */
-    transform: translateY(50px); /* Posición inicial */
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-out;
 }
 
 .hero-text {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    opacity: 0;
-    transform: translateY(50px);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
 }
+
 .hero-button {
-    background: url(Imágenes/FullLogo_Transparent.png);
-    background-color: #00e6a4;
-    color: #002b26;
-    text-decoration: none;
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
+    background-color: #fff;
+    color: #004e43;
     font-weight: bold;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .hero-button:hover {
-    background-color: #00b387;
-    transform: scale(1.05); /* Efecto de ampliación */
+    background-color: #004e43;
+    transform: scale(1.1);
+    color: white;
 }
 
-
-/* Contenido de la presentación */
-.hero-content {
-    position: relative;
-    z-index: 2; /* Para que esté encima de la transparencia */
-    text-align: center; /* Centrar texto */
-    max-width: 600px; /* Limitar ancho del contenido */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semi-transparente */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+/* Formas decorativas */
+.hero-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
 }
 
-/* Títulos y párrafos */
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.shape {
+    position: absolute;
+    background-color: #e8c07a;
+    opacity: 0.8;
+    animation: floatShapes 10s infinite ease-in-out;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #e8c07a;
+    top: 20%;
+    left: 10%;
 }
 
-/* Botón */
-.hero-content .btn {
-    background-color: #00e6a4;
-    color: #002b26;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+.shape.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
 }
 
-.hero-content .btn:hover {
-    background-color: #00b387;
-    transform: scale(1.05); /* Efecto de ampliación */
+.shape.square {
+    width: 100px;
+    height: 100px;
+    top: 75%;
+    left: 30%;
+    transform: rotate(15deg);
 }
+
 /* Sección Servicios */
 .services {
     padding: 50px 20px;
     text-align: center;
+    position: relative;
 }
 
 .services h2 {
@@ -256,10 +266,8 @@ body {
 
 /* Botón para ver más servicios */
 .services-button {
-    margin-top: 30px;
-}
-
-.services-button .btn {
+    display: inline-block; /* Botón en línea y centrado */
+    margin: 30px auto 0; /* Margen superior */
     background-color: #00e6a4;
     color: #002b26;
     text-decoration: none;
@@ -270,11 +278,10 @@ body {
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.services-button .btn:hover {
+.services-button:hover {
     background-color: #00b387;
-    transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
+    transform: scale(1.1); /* Efecto de ampliación al pasar el cursor */
 }
-
 /* Portafolio */
 .portfolio {
     padding: 50px 20px;
@@ -345,12 +352,10 @@ body {
 }
 
 /* Botón para ver el portafolio completo */
-.portfolio-button {
-    margin-top: 30px;
-}
-
-.portfolio-button .btn {
+.portfolio-button{
+    display: inline-block;
     background-color: #004e43; /* Color oscuro para diferenciar del botón de servicios */
+    margin: 30px auto 0;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -360,9 +365,9 @@ body {
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.portfolio-button .btn:hover {
-    background-color: #002b26; /* Oscurecer aún más al pasar el cursor */
-    transform: scale(1.05); /* Efecto de ampliación */
+.portfolio-button:hover {
+    background-color: #00e6a4; /* Oscurecer aún más al pasar el cursor */
+    transform: scale(1.1); /* Efecto de ampliación */
 }
 
 /* CTA Section */
@@ -381,7 +386,8 @@ body {
     margin-bottom: 20px;
 }
 
-.cta .btn {
+.contact-button {
+    display: inline-block;
     background-color: #00e6a4;
     color: #002b26;
     text-decoration: none;
@@ -392,9 +398,9 @@ body {
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.cta .btn:hover {
+.contact-button:hover {
     background-color: #00b387;
-    transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
+    transform: scale(1.1); /* Efecto de ampliación al pasar el cursor */
 }
 
 /* Footer */
@@ -469,4 +475,33 @@ body {
 .footer-bottom p {
     font-size: 0.9rem;
     color: #ccc;
+}
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatShapes {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }

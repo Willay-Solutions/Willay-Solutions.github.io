@@ -1,0 +1,103 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #004e43, #00e6a4);
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+.gpt-header {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.logo-container {
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.gpt-logo {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Main */
+.gpt-main {
+    padding: 50px 20px;
+}
+
+.message-container {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideUp 2s ease-in-out;
+}
+
+.message-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+.message-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
