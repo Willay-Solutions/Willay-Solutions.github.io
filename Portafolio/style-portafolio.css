@@ -8,6 +8,7 @@
 /* Tipo de letra */
 body {
     font-family: 'Segoe UI Light', Tahoma;
+    background-color: #00b387;
 }*
 
 .portfolio-intro {
@@ -161,4 +162,9 @@ body {
 .modal a {
     color: #00e6a4;
     font-weight: bold;
+}
+
+.portfolio-icon{
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Ajusta el contenido para que llene el espacio */
 }
