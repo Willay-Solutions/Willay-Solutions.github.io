@@ -299,9 +299,11 @@ body {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .portfolio-item {
+    flex: 1;
     max-width: 300px;
     text-align: center;
 }
